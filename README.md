@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -40,8 +38,7 @@ Need a table to store pets as shown in figure 2.
 (Figure 2: Pets DynamoDB Table)
 
 
-
-#Set Up AWS Lambdas
+### Set Up AWS Lambdas
 
 Set up a lambda function to return all dog walkers based on what the user searches for as shown in figure 3. Note that the table name will be different depending on the name of your database.
 
@@ -69,5 +66,31 @@ Set up a function update pets database when a user registers a pet as shown in f
 ![Alt text](images/figure6.png)
  
 (Figure 6: Create Pets in Database Lambda Function)
+
+
+### Set up AWS API Gateway
+
+Create one API for dog walker functionality. 
+
+Create one API for pet’s functionality.
+
+All need a POST, GET and OPTIONS method.
+
+### POST Method
+
+1.	For both APIs this will be the method which updates your DynamoDB, so this method needs to trigger the corresponding lambda function which does that. I.e the pet API POST method will trigger the lambda function which creates pets in the DynamoDB. The integration request of the method will need to be set to “Lambda”
+
+   
+### GET Method
+
+1.	This will be the method which returns pets or dog walkers based on what the user searches for. I.e if a user wanted to find a dog walker from Oxford then the API should trigger the lambda which will query the DynamoDB to return all dog walkers from Oxford. The integration request of the method will need to be set to “Lambda”
+
+
+### OPTIONS Method
+
+1.	Both the dog walkers and pets APIs will have an options method with the same configuration as shown in the next step.
+2.	To set up the options method we need to first set the integration type as “Mock”. Next configure the integration response to match figure. Lastly configure the method response to match figure 8.
+ 
+(Figure 7: OPTIONS Integration Response Configuration)
 
 
