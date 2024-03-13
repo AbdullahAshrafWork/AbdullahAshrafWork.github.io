@@ -22,3 +22,16 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## AWS Code
 The code show under the AWS code folder is only there for viewing purposes. The code is acutally in the AWS console and is triggered over there once the API has been called.
+
+## Steps for AWS Functionality Reproduction 
+
+
+Set up DynamoDB
+Need a table to store dog walkers as shown in figure 1  
+
+(Figure 1: Dog Walkers DynamoDB Table)
+
+Need a table to store pets as shown in figure 2.
+
+(Figure 2: Pets DynamoDB Table)
+
