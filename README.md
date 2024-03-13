@@ -90,6 +90,8 @@ All need a POST, GET and OPTIONS method.
 
 1.	Both the dog walkers and pets APIs will have an options method with the same configuration as shown in the next step.
 2.	To set up the options method we need to first set the integration type as “Mock”. Next configure the integration response to match figure. Lastly configure the method response to match figure 8.
+
+![Alt text](images/figure7.png)
  
 (Figure 7: OPTIONS Integration Response Configuration)
 
