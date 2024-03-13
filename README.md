@@ -26,7 +26,7 @@ The code show under the AWS code folder is only there for viewing purposes. The 
 ## Steps for AWS Functionality Reproduction 
 
 
-#Set up DynamoDB
+###Set up DynamoDB
 Need a table to store dog walkers as shown in figure 1
 
 ![Alt text](images/figure1.png)
