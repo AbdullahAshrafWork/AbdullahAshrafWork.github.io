@@ -27,7 +27,9 @@ The code show under the AWS code folder is only there for viewing purposes. The 
 
 
 Set up DynamoDB
-Need a table to store dog walkers as shown in figure 1  
+Need a table to store dog walkers as shown in figure 1
+
+![Alt text](images/figure1.png)
 
 (Figure 1: Dog Walkers DynamoDB Table)
 
